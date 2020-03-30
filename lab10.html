@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta http-equiv="Content-Type"
+            content="text/html;
+            carset=UTF-8">
+    <title>LAB10</title>
+    <script src="mijn-functions.js"></script>
+    </head>
+    <body>
+    <form>
+        <div>
+            <label for="bedrag">Vul bedrag in:</label>
+            <input type="text" id="bedrag" name="bedrag" />
+        </div>
+            <label for="euro/dollar">Valuta: </label>
+        <select name="koers" id="koers">
+           <option value="dol-euro">dollar/euro</option>
+           <option value="euro-dol">euro/dollar</option>
+           <option value="ruble-euro">ruble/euro</option>
+           <option value="euro-ruble">euro/ruble</option>
+        </select>
+            <input type="button" name="converteren" id="converteren" value="converteren" onclick="convert()"/>
+            <p id="Uitkomst"></p>
+    </form>
+    </body>
+</html>

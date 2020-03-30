@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yahtzee</title>
+</head>
+<body>
+    <button id="Random" onclick="Random()">Gooi</button>
+<script>
+    function Random(){
+        randomgetallen = new Array;
+        randomgetallen[0] = Math.floor(Math.random() * 6 + 1);
+        randomgetallen[1] = Math.floor(Math.random() * 6 + 1);
+        randomgetallen[2] = Math.floor(Math.random() * 6 + 1);
+        randomgetallen[3] = Math.floor(Math.random() * 6 + 1);
+        randomgetallen[4] = Math.floor(Math.random() * 6 + 1);
+        document.write("<br>" + randomgetallen);
+    }
+</script>
+</body>
+</html>

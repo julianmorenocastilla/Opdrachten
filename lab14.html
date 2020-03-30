@@ -1,0 +1,49 @@
+<!DOCTYPE HTML> 
+<html> 
+  
+<head> 
+    <title> 
+        Generate random  
+        alpha-numeric string in JavaScript  
+    </title> 
+</head> 
+  
+<body style="text-align:center;"
+      id="body"> 
+    <h1 style="color:green;">   
+            Julian Moreno Castilla  
+        </h1> 
+    <p id="GFG_UP" 
+       style="font-size: 19px; 
+              font-weight: bold;"> 
+    </p> 
+    <button onClick="GFG_Fun()"> 
+        click here 
+    </button> 
+    <p id="GFG_DOWN" 
+       style="color: green;  
+              font-size: 24px;  
+              font-weight: bold;"> 
+    </p> 
+    <script> 
+        var up = document.getElementById('GFG_UP'); 
+        var down = document.getElementById('GFG_DOWN'); 
+        up.innerHTML =  
+          'Genereer random nummer'; 
+  
+        function randomStr(len, arr) { 
+            var ans = ''; 
+            for (var i = len; i > 0; i--) { 
+                ans +=  
+                  arr[Math.floor(Math.random() * arr.length)]; 
+            } 
+            return ans; 
+        } 
+  
+        function GFG_Fun() { 
+            down.innerHTML = randomStr(5, 'abcdefghijklmnopqrstuvwxyz'); 
+        } 
+    </script> 
+</body> 
+  
+</html> 

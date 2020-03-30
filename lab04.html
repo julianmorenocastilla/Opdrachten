@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html;
+          charset=UTF-8">
+    <title>Lab04</title>
+</head>
+<body>
+<script type="text/javascript">
+var palet = ['groen', 'blauw', 'rood', 'geel', 'oranje'];
+var nieuwekleur = prompt('Type een nieuwe kleur in : ');
+var splice1 = palet.slice(1, 4);
+var splice2 = palet.slice(2, 5);
+palet.push(nieuwekleur);
+document.write("<br>De kleuren zijn:" + palet );
+var nieuwekleur = prompt('Type een nieuwe kleur in : ');
+palet.unshift(nieuwekleur);
+document.write("<br>De kleuren zijn:" + palet );
+palet.sort();
+document.write("<br>Alfabetische volgorde: " + palet);
+document.write("<br>palet1 is nu: " + splice1);
+document.write("<br>palet 2 is nu: " + splice2);
+document.write("<br>palet 3 is nu: " + splice3);
+
+
+
+</script>
+</body>

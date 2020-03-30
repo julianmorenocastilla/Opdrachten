@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;
+    charset=UTF-8">
+    <title>Opdrachten</title>
+</head>
+<body>
+    <script>
+        doorgaan = confirm("Opgave 52: doorgaan?");
+        if (doorgaan == true) {
+            alert("Welkom bij de if-opdracht");
+        } else {
+            alert("if-opdracht onderbroken. Tot ziens!");
+            exit;
+        } 
+        if (doorgaan == true) {
+            leeftijd = prompt('Wat is je leeftijd?');
+        } if (leeftijd == null) {
+            alert("if-opdracht onderbroken. Tot ziens!");
+            exit;
+        }
+        if (leeftijd < 17) {
+            leerplichtig = true;
+        } else {
+            leerplichtig = false;
+        }
+        if (doorgaan && leerplichtig) {
+            alert('Je bent leerplichtig. Tot ziens!');
+        } else {
+            alert('Je bent NIET leerplichtig. Tot ziens!');
+        }
+    </script>
+</body>
+</html>

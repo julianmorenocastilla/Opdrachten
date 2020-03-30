@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vandaag = new Date();
+        var uur = vandaag.getHours();
+        var minuten = vandaag.getMinutes();
+        var seconden = vandaag.getSeconds();
+        var miliseconden = vandaag.getMilliseconds();
+        var lus = miliseconden;
+        var finish = lus + 3;
+       document.write("<br>while-lus begint om:" + uur + ":" + minuten + ":" + seconden + ":" + miliseconden);
+     
+        while (lus < finish) {
+            lus = new Date().getMilliseconds();
+            document.write("<br>deze lus om:" + uur + ":" + minuten + ":" + seconden + ":" + lus);
+        }
+        if (lus == miliseconden + 1) {
+            continue;
+        }
+        if (lus == miliseconden + 2) {
+            document.write("<br>while-lus voortijdig beeindigd");
+            break;
+        }
+      
+    </script>
+</body>
+</html>

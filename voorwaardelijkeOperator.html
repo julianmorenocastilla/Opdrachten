@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta http-equiv="Content-Type"
+              content="text/html;
+              charset=UTF-8">
+        <title>Voorwaardelijke opmaak</title>
+        </head>
+        <body>
+            <button id="btnPrompt" onclick="toonPrompt();">Voer getal in.</button>
+            <h2 id="tekst"></h2>
+            <script>
+            function toonPrompt() { 
+                var code = prompt("Hoeveel is 60 + 20?", "Voer hier uw antwoord in");
+                if (code == 80){
+                    document.getElementById('tekst').innerHTML = "Goed antwoord!";}
+                else {
+                    document.getElementById('tekst').innerHTML = "Fout antwoord...  ";
+                }
+            }
+            </script>
+        </body>
+</html>

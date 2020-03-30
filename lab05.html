@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html;
+          charset=UTF-8">
+    <title>Lab05</title>
+</head>
+<body>
+    <script>
+    einddatum = prompt("Wat is de einddatum JJJ-MM-DD?");
+    var deadline = new Date(2020, 7, 8, 4, 30);
+    var nu = new Date();
+    var dag = 86400000;
+    var resterende = 148;
+    document.write('<br>Deadline: ' + deadline + ' Er zijn nog: ' + resterende.toFixed(0) + ' dagen te gaan!');
+    </script>
+</body>
+</html>
